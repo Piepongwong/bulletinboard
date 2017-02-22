@@ -12,7 +12,7 @@ app.get('/addmessage', function(err, res) {
 	res.render('addmessage')
 })
 
-app.get('/showmessages', function(err, res) {
+app.get(['/showmessages', '/'], function(err, res) {
 	var client = new pg.Client(connectionString);
 	client.connect(function (err) {
 		if (err) throw err;
