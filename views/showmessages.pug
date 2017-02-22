@@ -1,0 +1,10 @@
+html
+	head
+		title="Show messages"
+	body
+		include navbar.pug
+		
+		h1 Bulletin Board
+		each message in messages
+			b #{message.title}
+			p #{message.body}

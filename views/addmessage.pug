@@ -1,0 +1,15 @@
+doctype html
+
+html
+	head
+		title="Add Message"
+	body
+		include navbar.pug
+
+		form(method="POST" action="addmessagehandler") 
+			input(type="text" name="title" value="Title") 
+			br
+			input(type="text" name="message" value="Message")
+			br
+			button(type="submit" value="submit") Post message
+			
